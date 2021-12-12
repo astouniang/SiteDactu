@@ -82,7 +82,7 @@
             <div class="inner">
               <h3><?php echo $count_all_users; ?></h3>
 
-              <p>Nombre d'Utilisateurs</p>
+              <p>Utilisateurs</p>
             </div>
            
             <a href="users_admin.php" class="small-box-footer">More info <i class=""></i></a>
