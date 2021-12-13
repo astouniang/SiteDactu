@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1
--- Généré le :  Dim 15 nov. 2020 à 02:03
--- Version du serveur :  10.1.35-MariaDB
--- Version de PHP :  7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +11,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `virtuablog`
+-- Base de données :  `SiteDactu`
 --
 
 -- --------------------------------------------------------
@@ -84,9 +76,9 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `cat_title`, `cat_desc`, `cat_slug`, `cat_date`, `cat_edit_date`, `cat_status`, `cat_priority`) VALUES
 (59, 'Sport', 'Catégorie du Sport', 'hardware', '', '', '1', '2'),
-(60, 'Economie', 'Catégorie de l\'économie', 'software', '', '16/04/2019', '1', '1'),
-(61, 'Industries', 'Catégorie des industries', 'games', '16/04/2019', '16/04/2019', '1', '1'),
-(62, 'Agricuture', 'Catégorie de l\'agriculture', 'mobile', '17/05/2019', '17/05/2019', '1', '1');
+(60, 'Economie', 'Catégorie de l\'économie', 'software', '', '16/11/2021', '1', '1'),
+(61, 'Industries', 'Catégorie des industries', 'games', '16/04/2019', '16/11/2021', '1', '1'),
+(62, 'Agricuture', 'Catégorie de l\'agriculture', 'mobile', '17/05/2019', '17/05/2021', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -133,8 +125,8 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `tokens` (`id`, `valeur`, `client`, `date_creation`, `date_expiration`) VALUES
-(1, 'ab4f63f9ac65152575886860dde480a1', '25f9e794323b453885f5181f1b624d0b', '2020-11-11 16:00:00', '2021-04-13 00:00:00'),
-(2, '20c8d69d0580c43b533f6cd628eed279', '55722118e8b7648e5385b65528a77712', '2020-11-11 16:00:00', '2021-04-13 00:00:00');
+(1, 'ab4f63f9ac65152575886860dde480a1', '25f9e794323b453885f5181f1b624d0b', '2020-12-11 16:00:00', '2021-04-13 00:00:00'),
+(2, '20c8d69d0580c43b533f6cd628eed279', '55722118e8b7648e5385b65528a77712', '2020-12-11 16:00:00', '2021-04-13 00:00:00');
 
 -- --------------------------------------------------------
 

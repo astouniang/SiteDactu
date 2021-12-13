@@ -36,26 +36,26 @@
             <div class="modal-content">
               <div class="modal-header modal-header-add">
                 <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class=""></i> Ajouter une Categorie</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <form method="post" action="">
                 <div class="form-group">
-                  <label for="cat_title" class="col-form-label">Title:</label>
+                  <label for="cat_title" class="col-form-label">Titre:</label>
                   <input type="text" class="form-control" id="cat_title" name="cat_title" placeholder="Enter Title Here" required="">
                 </div>
                 <div class="form-group">
-                  <label for="cat_desc" class="col-form-label">Description:</label>
-                  <input type="text" class="form-control" id="cat_desc" name="cat_desc" placeholder="Enter Description Here" required="">
+                  <label for="cat_desc" class="col-form-label">Description Categorie:</label>
+                  <input type="text" class="form-control" id="cat_desc" name="cat_desc" placeholder="Entrer une description" required="">
                 </div>
               
               </div>
               <br><br><br>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="save_category"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+
+                <button type="submit" class="" name="save_category"><span class="" aria-hidden="true"></span> Enregistrer</button>
               </div>
               </form>
             </div>
