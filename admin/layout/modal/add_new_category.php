@@ -36,7 +36,7 @@
             <div class="modal-content">
               <div class="modal-header modal-header-add">
                 <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class=""></i> Ajouter une Categorie</h4>
-             
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
