@@ -56,11 +56,11 @@
               ?>
 
           
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InsertUser"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter un nouveau utilisateur / admin</button>
+          <button type="button" class="" data-toggle="modal" data-target="#InsertUser"><span class="" aria-hidden="true"></span> Ajouter un nouveau utilisateur</button>
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                     title="Collapse">
-              <i class="fa fa-minus"></i></button>
+              <i class=""></i></button>
             <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
               <i class="fa fa-times"></i></button>
           </div>
@@ -75,11 +75,12 @@
               <th style="text-align: center;">
                 <input type="checkbox" class="form-check-input" id="selectAllCategoryCheckbox" name="selectAllCategoryCheckbox">
               </th>
-              <th style="text-align: center;">Name</th>
+              <th style="text-align: center;">Nom</th>
               <th style="text-align: center;">Username</th>
               <th style="text-align: center;">Email</th>
               
-              <th style="text-align: center;">Modifier/Supprimer</th>
+              <th style="text-align: center;">Modifier</th>
+              <th style="text-align: center;">Supprimer</th>
             </tr>
             <?php 
                 $sql_select_users = "SELECT * FROM users ORDER BY id desc";
@@ -98,7 +99,7 @@
                   $view_users_type = $rowusers['type'];
              ?>
              <tbody id="myTable">
-            <tr class="success">
+            <tr class="">
               <td style="text-align: center;">
                 <input type="checkbox" class="form-check-input" id="selectOneCheckBoxArray" name="selectOneCheckBoxArray[]" value="<?php echo $view_users_id; ?>">
               </td>
@@ -139,8 +140,9 @@
               
                 <td style="text-align: center;">
                 <button type="button" name="edit" class="" data-toggle="modal" data-target="#EditUser" data-user_id_edit="<?= $view_users_id ?>" data-user_name_edit="<?= $view_users_name ?>" data-user_username_edit="<?= $view_users_username ?>" data-user_email_edit="<?= $view_users_email ?>" data-user_image_edit="<?= $view_users_image ?>" data-user_type_edit="<?= $view_users_type ?>" data-user_type_edit1="<?= $view_users_type ?>" data-user_gender_edit="<?= $view_users_gender ?>" data-user_password_edit="<?= $view_users_password ?>" > <span class="" aria-hidden="true"></span> Modifier</button>
-
-               <button type="button" class="" data-toggle="modal" data-target="#DeleteUser" data-user_id_delete="<?= $view_users_id ?>"><span class="" aria-hidden="true"></span> Supprimer</button>
+              </td>
+              <td>
+              <button type="button" class="" data-toggle="modal" data-target="#DeleteUser" data-user_id_delete="<?= $view_users_id ?>"><span class="" aria-hidden="true"></span> Supprimer</button>
               </td>
             </tr>
             <?php
