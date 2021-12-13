@@ -34,8 +34,8 @@
         <div class="modal fade" id="InsertUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-header modal-header-add">
-                <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class="fa fa-user"></i> Ajouter un nouveau utilisateur</h4>
+              <div class="modal-header">
+                <h4 class="" id="exampleModalLongTitle" align="center"><i class="f"></i> Ajouter un nouveau utilisateur!!!!!</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -59,8 +59,8 @@
                   <label for="user_type" class="col-form-label"> User type:</label>
                       <select class="form-control" id="user_type" name="user_type" required>
                     <option value="" disabled selected>Select...</option>
-                    <option value="0" >User</option>
-                    <option value="1">Administrator</option>
+                    <option value="0" >Utilisateur</option>
+                    <option value="1">Administrateur</option>
                   </select>
                 </div>
                 <div class="form-group col-md-4">
@@ -71,22 +71,13 @@
                   <label for="user_password_reapet" class="col-form-label"> Confirm Password:</label>
                   <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm password" required>
                 </div>
-                <div class="form-group col-md-4">
-                  <label for="cat_title" class="col-form-label"> Gender:</label><br>
-                  <label><input type="radio" name="user_gender" id="user_gender" value="1" checked> <i class="fa fa-female" aria-hidden="true"></i></label>
-                  <label><input type="radio" name="user_gender" id="user_gender" value="2"> <i class="fa fa-male" aria-hidden="true"></i></label>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="user_status" class="col-form-label" > Status:</label><br>
-                    <input type="radio" name="user_status" id="user_status" value="1" checked=""> Active
-                    <input type="radio" name="user_status" id="user_status" value="0"> Pending
-                </div>
-                
+   
+              
               </div>
               <br>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="save_user"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+                
+                <button type="submit" class="" name="save_user"><span class="" aria-hidden="true"></span> Enregistrer</button>
               </div>
               </form>
             </div>

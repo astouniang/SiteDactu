@@ -48,8 +48,8 @@
         <div class="modal fade bd-example-modal-lg" id="InsertPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <div class="modal-header modal-header-add">
-                <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class="fa fa-file"></i> Ajouter un nouveau post</h4>
+              <div class="modal-header ">
+                <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class=""></i> Ajouter un nouveau post</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -57,8 +57,8 @@
               <div class="modal-body">
                 <form method="post" action="" enctype="multipart/form-data">
                 <div class="form-group">
-                  <label for="post_title" class="col-form-label">Title:</label>
-                  <input type="text" class="form-control" id="post_title" name="post_title" placeholder="Enter Title Here" required="">
+                  <label for="post_title" class="col-form-label">Titre:</label>
+                  <input type="text" class="form-control" id="post_title" name="post_title" placeholder="Entrer un titre" required="">
                 </div>
                 <script>
 //function myFunction() {
@@ -67,7 +67,7 @@
 </script>
                 <div class="row">
                     <div class="col-sm-4">
-                      <label for="category_id" class="col-form-label">Category:</label>
+                      <label for="category_id" class="col-form-label">Categorie:</label>
                       <select class="form-control" name="category_id" id="category_id">
                         <?php 
                             $sql_select_category = "SELECT * FROM categories ORDER BY id DESC";
@@ -108,8 +108,8 @@
               </div>
               <br><br><br>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="save_post"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+                
+                <button type="submit" class="" name="save_post"><span class="" aria-hidden="true"></span> Enregistrer</button>
               </div>
               </form>
             </div>

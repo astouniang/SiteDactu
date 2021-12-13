@@ -13,7 +13,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tableau de bord
+        lES CATEGORIES!!!!!!!!!!!!
         
       </h1>
     
@@ -23,69 +23,33 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="col">
-        <div class="col-lg-3">
+        <div class="col-lg-12">
           <!-- small box -->
-          <div class="info-box">
-            <?php 
-                $count_categories= 0;
-                $sql_select_categories = "SELECT * FROM categories";
-                $result_sql_select_categories = mysqli_query($dbconnection, $sql_select_categories);
-                while ($rowcategories = mysqli_fetch_assoc($result_sql_select_categories))
-                {
-                  $count_categories++;
-                } 
-             ?>
-            <div class="inner">
-              <h3><?php echo $count_categories; ?></h3>
-
-              <p>Categories</p>
-              </div>
-             
-            <a href="category_admin.php" class="small-box-footer">More info <i class=""></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="info-box">
-            <?php 
-                $counter_posts= 0;
-                $sql_select_posts = "SELECT * FROM posts ORDER BY id desc";
-                $result_sql_select_posts = mysqli_query($dbconnection, $sql_select_posts);
-                while ($rowposts = mysqli_fetch_assoc($result_sql_select_posts))
-                {
-                  $counter_posts++;
-                }
-             ?>
-            <div class="inner">
-              <h3><?php echo $counter_posts; ?></h3>
-
-              <p>Posts</p>
-            </div>
-          
-            <a href="post_admin.php" class="small-box-footer">More info <i class=""></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="info-box">
-            <?php 
-                $sql_select_users_all = "SELECT * FROM users ORDER BY id desc";
-                $result_sql_select_users_all = mysqli_query($dbconnection, $sql_select_users_all);
-                $count_all_users= 0;
-                while ($rowusers_all = mysqli_fetch_assoc($result_sql_select_users_all))
-                {
-                  $count_all_users++;
-                }
-             ?>
-            <div class="inner">
-              <h3><?php echo $count_all_users; ?></h3>
-
-              <p>Utilisateurs</p>
-            </div>
+          <div class="">
+        <li>
+        <a href="category_admin.php" class="small-box-footer">CATEGORIES<i class=""></i></a>
+        </li>
            
-            <a href="users_admin.php" class="small-box-footer">More info <i class=""></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-12 col-xs-6">
+          <!-- small box -->
+          <div class="">
+            <li>
+            <a href="post_admin.php" class="small-box-footer">POSTS <i class=""></i></a>
+            </li>
+           
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+       
+           <li>
+           <a href="users_admin.php" class="small-box-footer">USERS<i class=""></i></a>
+           </li>
+           
           </div>
         </div>
         <!-- ./col -->

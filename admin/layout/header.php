@@ -2,9 +2,9 @@
     <!-- Logo -->
     <a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>P</b>HP</span>
+      <span class="logo-mini"><b></b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Page</b>Admin</span>
+      <span class="logo-lg"><b></b>Bienvenue Admin</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -14,11 +14,7 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           
-          <li><a href="comment_admin.php">
-              
-             
-              <i class=""></i><span class="hidden-xs">  new post</span>
-            </a></li>
+  
             <!-- Modal add new post -->
             <?php //include "layout/modal/add_new_post.php"; ?>
              <!-- // Modal add new Post -->
@@ -36,7 +32,7 @@
               <li class="user-footer">
                
                 <div class="">
-                  <a href="../layout/logout.php" class="btn btn-default btn-flat">deconnexion</a>
+                  <a href="../layout/logout.php" class="btn btn-default btn-flat"></a>
                 </div>
               </li>
             </ul>

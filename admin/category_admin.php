@@ -24,7 +24,7 @@
 
 
           
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InsertCategory"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add new category</button>
+          <button type="button" class="" data-toggle="modal" data-target="#InsertCategory"><span class="" aria-hidden="true"></span> Ajouter Categorie</button>
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                     title="Collapse">
@@ -44,7 +44,8 @@
               </th>
               <th style="text-align: center;">Categories</th>
               <th style="text-align: center;">Description</th>
-              <th style="text-align: center;">Edit/Delete</th>
+              <th style="text-align: center;">Modifier</th>
+              <th style="text-align: center;">Supprimer</th>
             </tr>
             <?php 
                 $counter= 0;
@@ -61,9 +62,9 @@
                   
              ?>
              <tbody id="myTable">
-            <tr class="success">
+            <tr class="">
               <td style="text-align: center;">
-                <input type="checkbox" class="form-check-input" id="selectOneCheckBoxArray" name="selectOneCheckBoxArray[]" value="<?php echo $view_category_id; ?>">
+                <input type="checkbox" class="" id="selectOneCheckBoxArray" name="selectOneCheckBoxArray[]" value="<?php echo $view_category_id; ?>">
               </td>
               <td style="text-align: center;"><?php echo $view_cat_title ?></td>
               <td style="text-align: center;"><?php echo $view_cat_desc ?></td>
@@ -87,7 +88,10 @@
 
                 <button type="button" name="edit" class="" data-toggle="modal" data-target="#EditCategory" data-category_id_edit="<?= $view_category_id ?>" data-category_title_edit="<?= $view_cat_title ?>" data-cat_desc_edit="<?= $view_cat_desc ?>" data-cat_slug_edit="<?= $view_cat_slug ?>" data-cat_priority_edit="<?= $view_cat_priority ?>" data-cat_date_edit="<?= $view_cat_date ?>"> <span class="" aria-hidden="true"></span> Modifier</button>
 
-               <button type="button" class="b" data-toggle="modal" data-target="#DeleteCategory" data-category_id_delete="<?= $view_category_id ?>"><span class="" aria-hidden="true"></span> Supprimer</button>
+               
+              </td>
+              <td>
+              <button type="button" class="b" data-toggle="modal" data-target="#DeleteCategory" data-category_id_delete="<?= $view_category_id ?>"><span class="" aria-hidden="true"></span>Supprimer</button>
               </td>
             </tr>
             <?php

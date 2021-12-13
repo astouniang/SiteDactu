@@ -10,13 +10,7 @@
         $edit_post_date=$_POST['post_date_edit'];
         $edit_post_edit_date=$_POST['post_edit_date_edit'];
         //$edit_post_image=$_POST['post_image_edit'];
-        $new_post_image = $_FILES["new_post_image"]["name"];
-        $new_post_image_temp = $_FILES["new_post_image"]["tmp_name"];
-        move_uploaded_file($new_post_image_temp,"images/blog/$new_post_image");
-        if (empty($new_post_image))
-        {
-         $new_post_image=$_POST['post_image_edit1'];
-        }
+    
 
         $edit_post_text=$_POST['post_text_edit'];
         $edit_post_tag=$_POST['post_tag_edit'];
@@ -42,8 +36,8 @@
         <div class="modal fade bd-example-modal-lg" id="EditPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <div class="modal-header modal-header-warning">
-                <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class="fa fa-pencil-square-o"></i> Edit post</h4>
+              <div class="">
+                <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class=""></i> Modifier un post!!!!!!!!!!!</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -54,8 +48,8 @@
                   <input type="hidden" class="form-control" id="post_id_edit" name="post_id_edit">
                 </div>
                 <div class="form-group">
-                  <label for="post_title_edit" class="col-form-label">Title:</label>
-                  <input type="text" class="form-control" id="post_title_edit" name="post_title_edit" placeholder="Enter Title Here" required="">
+                  <label for="post_title_edit" class="col-form-label">Titre:</label>
+                  <input type="text" class="form-control" id="post_title_edit" name="post_title_edit" placeholder="Entrer le titre" required="">
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
@@ -86,58 +80,24 @@
                   <div class="form-group" id="foo">
                     <input type="hidden" name="post_image_edit1" id="post_image_edit1">
                     
- <script>
-function mouseOver() {
-   var image = document.getElementById('image');
-   var slikazaprikaz = document.getElementById("post_image_edit1").value; 
-   var putanja = 'images/blog/';
-   image.setAttribute('src', putanja + slikazaprikaz);
-   //alert(slikazaprikaz);
-}
-//function bigImg() {
-  // var image = document.getElementById('image');
-   //image.setAttribute('src', 'images/blog/nophoto-default1.jpg');
-//}
-</script>
+
     
                      <img  class="zoom" src="" id="image" name="image" width="50">
                      
                     <br><br>
-                      <input type="file" name="new_post_image" id="new_post_image">
+                     
 
                   </div>
-                  <div class="form-group shadow-textarea">
-                    <label for="post_text_edit" class="col-form-label">Text:</label>
-                    <textarea name="post_text_edit" id="post_text_edit" placeholder="Enter Post Text Here" required></textarea>
-                  </div>
+               
                     <script>
                        CKEDITOR.replace('post_text_edit');
                     </script>
-                  <div class="form-group">
-                    <label for="post_tag_edit" class="col-form-label">Tags:</label>
-                    <input type="text" class="form-control" id="post_tag_edit" name="post_tag_edit">
-                  </div>
-                  <div class="row">
-                  <div class="col-sm-4">
-                    <label for="post_status_edit1" class="col-form-label" >Status:</label><br>
-                    <input type="radio" name="post_status_edit" value="1" checked=""> Publish
-                    <input type="radio" name="post_status_edit" value="0"> Draft
-                  </div>
-                  <div class="col-sm-2">
-                    <label for="post_priority_edit" class="col-form-label">Priority:</label>
-                    <input type="text" class="form-control" id="post_priority_edit" name="post_priority_edit">
-                    <input type="hidden" name="post_date_edit" id="post_date_edit">
-                  </div>
-                  <div class="col-sm-4">
-                    <input type="hidden" class="form-control" id="post_visit_counter_edit" name="post_visit_counter_edit">
-                  </div>
-                </div>
-                
-              </div>
+               
+            
               <br><br><br>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="edit_post"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+               
+                <button type="submit" class="btn btn-primary" name="edit_post"><span class="" aria-hidden="true"></span> Enregistrer</button>
               </div>
               </form>
             </div>

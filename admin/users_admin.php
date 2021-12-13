@@ -116,7 +116,7 @@
                 else
                 {
               ?>
-              <td style="text-align: center;"><span class="label label-warning">Pending</span></td>
+             
               <?php
                 }
               ?>

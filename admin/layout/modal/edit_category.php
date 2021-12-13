@@ -40,33 +40,21 @@
                   <input type="hidden" class="form-control" id="cat_id_edit" name="cat_id_edit">
                 </div>
                 <div class="form-group">
-                  <label for="cat_title_edit" class="col-form-label">Title:</label>
+                  <label for="cat_title_edit" class="col-form-label">Titre:</label>
                   <input type="text" class="form-control" id="cat_title_edit" name="cat_title_edit" placeholder="Enter Title Here" required="">
                 </div>
                 <div class="form-group">
                   <label for="cat_desc_edit" class="col-form-label">Description:</label>
                   <input type="text" class="form-control" id="cat_desc_edit" name="cat_desc_edit" placeholder="Enter Description Here" required="">
                 </div>
-                <div class="form-group">
-                  <label for="cat_slug_edit" class="col-form-label">Slug:</label>
-                  <input type="text" class="form-control" id="cat_slug_edit" name="cat_slug_edit" placeholder="Enter Slug Here" required="">
-                </div>
-                <div class="col-sm-4">
-                    <label for="cat_status_edit" class="col-form-label" >Status:</label><br>
-                    <input type="radio" name="cat_status_edit" id="cat_status_edit" value="1" checked=""> Publish
-                    <input type="radio" name="cat_status_edit" id="cat_status_edit" value="0"> Draft
-                  </div>
-                  <div class="form-group col-md-6">
-                  <label for="cat_priority" class="col-form-label">Category priority:</label>
-                  <input type="text" class="form-control" id="cat_priority_edit" name="cat_priority_edit" placeholder="Enter category priority number 0-9" required="">
-
-                  <input type="hidden" class="form-control" id="cat_date_edit" name="cat_date_edit" required="">
-                </div>
+              
+            
+             
               </div>
               <br><br><br>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="edit_category"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save</button>
+                <button type="button" class="" data-dismiss="modal">fermer</button>
+                <button type="submit" class="btn btn-primary" name="edit_category"><span class="" aria-hidden="true"></span> Enregistrer</button>
               </div>
               </form>
             </div>
