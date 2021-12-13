@@ -19,8 +19,8 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="my-4">Site D'actualité<source media="(min-width: )" srcset="">
-          <small>Actualités</small>
+        <h1 class="my-4"><source media="(min-width: )" srcset="">
+          
         </h1>
         <?php 
                 $no_posts_per_page = 5;
@@ -126,6 +126,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="blog-template/vendor/jquery/jquery.min.js"></script>
   <script src="blog-template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
 </body>
 

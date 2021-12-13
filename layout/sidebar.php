@@ -17,7 +17,7 @@
         <div class="form-group">
           <div class="input-group">
                 <span class="input-group-addon"><i class=""></i> </span>
-                <input type="text" class="form-control" name="username" placeholder="login" required="required">
+                <input type="text" class="form-control" name="username" placeholder="Username" required="required">
             </div>
         </div>
     <div class="form-group">
@@ -27,11 +27,12 @@
             </div>
         </div>        
         <div class="form-group">
-            <button type="submit" name="login" class="btn btn-primary  btn-block login-btn">Se connecter</button>
+            <button type="submit" name="login" class="btn btn-primary btn-block login-btn">Se connecter</button>
         </div>
-              
+        
         
     </form>
+    
 </div>
  <?php 
             }
@@ -50,10 +51,7 @@
               
            ?>
 <div class="card my-4">
-        <div class="card-header">
-          <p align="center"><img  class="zoom3" src="admin/images/users/<?php echo $success_login_image_admin; ?>" width="110"></p>
-          <p align="center"><b>Bienvenue <?php echo $success_login_name_admin; ?></b></p>
-        </div>
+       
         <div class="card-header">
           
           <!-- Status -->
@@ -71,9 +69,9 @@
             {
 
            ?>
-           <a href="profil.php/" class="btn btn-default btn-flat">Profil</a>
+           <a href="profil.php/" class="btn btn-default btn-flat">Mon Profil</a>
            <?php } ?>
-          <a href="layout/logout.php" class="btn btn-default btn-flat">Se déconnecter</a></p>
+          <a href="layout/logout.php" class="btn btn-default btn-flat">déconnection</a></p>
         </div>
       </div>
       <?php 
@@ -81,38 +79,12 @@
           ?>
    
 
-       
+        <!-- Search Widget -->
+  
+
+        <!-- Categories Widget -->
+        
 
         <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Articles recentes</h5>
-          <?php 
-                $counter_popular= 0;
-                $sql_select_post_popular = "SELECT * FROM posts WHERE post_status = 1 ORDER BY post_visit_counter DESC LIMIT 0,5";
-                $result_sql_select_post_popular = mysqli_query($dbconnection, $sql_select_post_popular);
-                while ($rowpost_popular = mysqli_fetch_assoc($result_sql_select_post_popular))
-                {
-                  $view_post_id_popular = $rowpost_popular['id'];
-                  $view_post_category_popular = $rowpost_popular['post_category'];
-                  $view_post_title_popular = $rowpost_popular['post_title'];
-                  $view_post_autor_popular = $rowpost_popular['post_autor'];
-                  $view_post_date_popular = $rowpost_popular['post_date'];
-                  $view_post_edit_date_popular = $rowpost_popular['post_edit_date'];
-                  $view_post_image_popular = $rowpost_popular['post_image'];
-                  $view_post_text_popular = $rowpost_popular['post_text'];
-                  $view_post_tag_popular = $rowpost_popular['post_tag'];
-                  $view_post_visit_counter_popular = $rowpost_popular['post_visit_counter'];
-                  $view_post_status_popular = $rowpost_popular['post_status'];
-                  $view_post_priority_popular = $rowpost_popular['post_priority'];
-                 
-                  $counter_popular++;
-                  
-             ?>
-          <div class="card-body">
-            <img class="card-img-top" src="admin/images/blog/<?php echo $view_post_image_popular;?>" alt="<?php echo $view_post_image_popular;?>">
-            <b>
-              <a href="post.php?postid=<?=$view_post_id_popular ?>"style="color: #cc0000"><?php echo $view_post_title_popular; ?></a></b>
-          </div>
-          <?php } ?>
-        </div>
+   
    </div>

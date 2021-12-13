@@ -38,7 +38,7 @@
             <div class="inner">
               <h3><?php echo $count_categories; ?></h3>
 
-              <p>Nombre de Categories</p>
+              <p>Categories</p>
               </div>
              
             <a href="category_admin.php" class="small-box-footer">More info <i class=""></i></a>
@@ -60,7 +60,7 @@
             <div class="inner">
               <h3><?php echo $counter_posts; ?></h3>
 
-              <p>Nombre de Posts</p>
+              <p>Posts</p>
             </div>
           
             <a href="post_admin.php" class="small-box-footer">More info <i class=""></i></a>
