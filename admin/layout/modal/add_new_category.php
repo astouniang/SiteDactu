@@ -34,7 +34,7 @@
         <div class="modal fade" id="InsertCategory" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-header modal-header-add">
+              <div class="modal-header ">
                 <h4 class="modal-title" id="exampleModalLongTitle" align="center"><i class=""></i> Ajouter une Categorie</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -44,7 +44,7 @@
                 <form method="post" action="">
                 <div class="form-group">
                   <label for="cat_title" class="col-form-label">Titre:</label>
-                  <input type="text" class="form-control" id="cat_title" name="cat_title" placeholder="Enter Title Here" required="">
+                  <input type="text" class="form-control" id="cat_title" name="cat_title" placeholder="titre categoie" required="">
                 </div>
                 <div class="form-group">
                   <label for="cat_desc" class="col-form-label">Description Categorie:</label>
