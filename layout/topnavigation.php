@@ -8,6 +8,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.php">Accueil
+            <a class="nav-link" href="index.php">Industrie
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -23,6 +24,7 @@
 
                   $sql_select_post_for_category = "SELECT * FROM posts WHERE post_category = {$view_category_id}";
                 $result_sql_select_post_for_category = mysqli_query($dbconnection, $sql_select_post_for_category);
+                
                 while ($rowpost_for_category = mysqli_fetch_assoc($result_sql_select_post_for_category))
                 {
                                    

@@ -9,7 +9,7 @@
 <body>
 
   <!-- Navigation -->
- <?php include "layout/topnavigation.php"; ?>
+ <?php require "layout/topnavigation.php"; ?>
 
   <!-- Page Content -->
   <div class="container">

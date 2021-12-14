@@ -62,7 +62,7 @@
                
 
              ?>
-          <a href="admin/" class="btn btn-default btn-flat" target="_blank">Admin</a>
+          <a href="admin/" class="btn btn-default btn-flat" target="_blank">GO</a>
           <?php
            }
            else
@@ -71,7 +71,7 @@
            ?>
            <a href="profil.php/" class="btn btn-default btn-flat">Mon Profil</a>
            <?php } ?>
-          <a href="layout/logout.php" class="btn btn-default btn-flat">déconnection</a></p>
+          <a href="layout/logout.php" class="btn btn-default btn-flat">retour</a></p>
         </div>
       </div>
       <?php 

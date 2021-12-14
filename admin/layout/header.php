@@ -4,14 +4,14 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b></b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b></b>Bienvenue Admin</span>
+      <span class="logo-lg"><b></b>Page Admin</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
      
 
-      <div class="navbar-custom-menu">
+      <div class="">
         <ul class="nav navbar-nav">
           
   
@@ -32,7 +32,7 @@
               <li class="user-footer">
                
                 <div class="">
-                  <a href="../layout/logout.php" class="btn btn-default btn-flat"></a>
+                  <a href="../layout/logout.php" class="btn btn-default btn-flat">Se deconnecter</a>
                 </div>
               </li>
             </ul>

@@ -56,11 +56,10 @@
               ?>
 
           
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InsertPost"><span class="g" aria-hidden="true" onclick="mouseOver(this)"></span> Ajouter un nouveau post</button>
+          <button type="button" class="" data-toggle="modal" data-target="#InsertPost"><span class="" aria-hidden="true" onclick="mouseOver(this)"></span> Ajouter un nouveau post</button>
           <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                    title="Collapse">
-              <i class="fa fa-minus"></i></button>
+          
+              
             <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
               <i class="fa fa-times"></i></button>
           </div>
@@ -89,13 +88,14 @@
            </table>
             <br>
           <table class="table table-hover">
-            <tr class="info">
+            <tr class="">
               <th style="text-align: center;">
                 <input type="checkbox" class="form-check-input" id="selectAllCategoryCheckbox" name="selectAllCategoryCheckbox">
               </th>
-              <th style="text-align: center;">Title</th>
-              <th style="text-align: center;">Category</th>
-              <th style="text-align: center;">Edit/Delete</th>
+              <th style="text-align: center;">Titre</th>
+              <th style="text-align: center;">Categories</th>
+              <th style="text-align: center;">Modifier</th>
+              <th style="text-align: center;">Supprimer</th>
             </tr>
             <?php 
                 $counter= 0;
@@ -120,7 +120,7 @@
                   
              ?>
              <tbody id="myTable">
-            <tr class="success">
+            <tr class="">
               <td style="text-align: center;">
                 <input type="checkbox" class="form-check-input" id="selectOneCheckBoxArray" name="selectOneCheckBoxArray[]" value="<?php echo $view_post_id; ?>">
               </td>
@@ -177,7 +177,10 @@
 
                 <button type="button" name="edit" class="" data-toggle="modal" data-target="#EditPost" data-post_id_edit="<?= $view_post_id ?>" data-post_category_edit="<?= $view_post_category ?>" data-post_title_edit="<?= $view_post_title ?>" data-post_autor_edit="<?= $view_post_autor ?>" data-post_date_edit="<?= $view_post_date ?>" data-post_edit_date_edit="<?= $view_post_edit_date ?>" data-post_image_edit="<?= $view_post_image ?>" data-post_text_edit="<?= $view_post_text ?>" data-post_tag_edit="<?= $view_post_tag ?>" data-post_visit_counter_edit="<?= $view_post_visit_counter ?>" data-post_status_edit="<?= $view_post_status ?>" data-post_priority_edit="<?= $view_post_priority ?>"> <span class="" aria-hidden="true"></span> Modifier</button>
 
-               <button type="button" class="" data-toggle="modal" data-target="#DeletePost" data-post_id_delete="<?= $view_post_id ?>"><span class="" aria-hidden="true"></span> Supprimer</button>
+               
+              </td>
+              <td>
+              <button type="button" class="" data-toggle="modal" data-target="#DeletePost" data-post_id_delete="<?= $view_post_id ?>"><span class="" aria-hidden="true"></span> Supprimer</button>
               </td>
             </tr>
             <?php

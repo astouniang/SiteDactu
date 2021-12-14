@@ -36,7 +36,7 @@
           <form action="" method="post">
          
           <table class="table table-hover">
-            <tr class="info">
+            <tr class="">
               <th style="text-align: center;">
                 <input type="checkbox" class="form-check-input" id="selectAllCategoryCheckbox" name="selectAllCategoryCheckbox">
               </th>

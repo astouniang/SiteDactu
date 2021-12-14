@@ -13,7 +13,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        lES CATEGORIES!!!!!!!!!!!!
+   --------------------------------------------------LES CATEGORIES-----------------------------------------------------------
         
       </h1>
     
@@ -27,7 +27,7 @@
           <!-- small box -->
           <div class="">
         <li>
-        <a href="category_admin.php" class="small-box-footer">CATEGORIES<i class=""></i></a>
+        <a href="category_admin.php" class="small-box-footer">Voir CATEGORIES<i class=""></i></a>
         </li>
            
           </div>
@@ -37,7 +37,7 @@
           <!-- small box -->
           <div class="">
             <li>
-            <a href="post_admin.php" class="small-box-footer">POSTS <i class=""></i></a>
+            <a href="post_admin.php" class="small-box-footer">Voir POSTS <i class=""></i></a>
             </li>
            
           </div>
@@ -47,7 +47,7 @@
           <!-- small box -->
        
            <li>
-           <a href="users_admin.php" class="small-box-footer">USERS<i class=""></i></a>
+           <a href="users_admin.php" class="small-box-footer">Voir USERS<i class=""></i></a>
            </li>
            
           </div>
