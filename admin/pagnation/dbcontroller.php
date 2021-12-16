@@ -3,7 +3,7 @@ class DBController {
 	private $host = "localhost";
 	private $user = "root";
 	private $password = "";
-	private $database = "virtuablog";
+	private $database = "siteDactu";
 	private $conn;
 	
 	function __construct() {
